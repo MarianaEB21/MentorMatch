@@ -1,108 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Home"
-    android:background="@color/gelo">
-
+    android:background="@color/gelo"
+    android:padding="12dp"
+    tools:context=".Home">
 
     <TextView
         android:id="@+id/txt_home"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
         android:text="Bem Vindo João!"
-        android:textStyle="bold"
         android:textSize="18sp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-
-        />
-
-    <SearchView
+    <androidx.appcompat.widget.SearchView
         android:id="@+id/search_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/txt_home"
-        android:layout_marginStart="0dp"
+        android:layout_marginStart="12dp"
         android:layout_marginTop="30dp"
-
-        >
-
-    </SearchView>
+        android:layout_marginEnd="12dp"
+        android:background="@color/grey"
+        android:queryHint="Pesquise por uma pessoa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_home" />
 
     <TextView
         android:id="@+id/txt_mentor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
         android:text="Mentores que podem te ajudar"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/search_view"
-        />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_view" />
 
-    <ImageView
-        android:id="@+id/img_mentor1"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_mentor1"
         android:layout_width="340dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/mentor1"
-        app:layout_constraintTop_toBottomOf="@+id/txt_mentor"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="120dp"/>
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        app:cardCornerRadius="14dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_mentor">
 
-    <ImageButton
-        android:id="@+id/imageButton1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@android:drawable/btn_star"
-        app:layout_constraintTop_toBottomOf="@+id/txt_mentor"
-        android:layout_marginStart="280dp"
-        android:layout_marginTop="150dp"
-        android:backgroundTint="@color/white"
-        />
+        <ImageView
+            android:id="@+id/img_mentor1"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mentor1" />
+    </androidx.cardview.widget.CardView>
 
-    <ImageView
-        android:id="@+id/img_mentor2"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_mentor2"
         android:layout_width="340dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/mentor2"
-        app:layout_constraintTop_toBottomOf="@+id/img_mentor1"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="270dp"/>
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        app:cardCornerRadius="14dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_mentor1">
 
-    <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@android:drawable/btn_star"
-        app:layout_constraintTop_toBottomOf="@+id/img_mentor1"
-        android:layout_marginStart="280dp"
-        android:layout_marginTop="295dp"
-        android:backgroundTint="@color/white"/>
+        <ImageView
+            android:id="@+id/img_mentor2"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mentor2" />
+    </androidx.cardview.widget.CardView>
 
-    <ImageView
-        android:id="@+id/img_mentor3"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_mentor3"
         android:layout_width="340dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/mentor3"
-        app:layout_constraintTop_toBottomOf="@+id/img_mentor2"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="420dp"/>
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        app:cardCornerRadius="14dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_mentor2">
 
-    <ImageButton
-        android:id="@+id/imageButton3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@android:drawable/btn_star"
-        app:layout_constraintTop_toBottomOf="@+id/img_mentor2"
-        android:layout_marginStart="280dp"
-        android:layout_marginTop="435dp"
-        android:backgroundTint="@color/white"/>
+        <ImageView
+            android:id="@+id/img_mentor3"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mentor3" />
+    </androidx.cardview.widget.CardView>
 
-</FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
