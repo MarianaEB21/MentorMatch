@@ -20,6 +20,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
 
+
         />
 
     <SearchView
@@ -39,7 +40,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="100dp"
         android:layout_marginBottom="10dp"
         android:text="Mentores que podem te ajudar"
         android:textStyle="bold"
@@ -48,11 +49,60 @@
 
     <ImageView
         android:id="@+id/img_mentor1"
-        android:layout_width="wrap_content"
+        android:layout_width="340dp"
         android:layout_height="wrap_content"
         android:src="@drawable/mentor1"
         app:layout_constraintTop_toBottomOf="@+id/txt_mentor"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="220dp"/>
+        android:layout_marginTop="120dp"/>
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/btn_star"
+        app:layout_constraintTop_toBottomOf="@+id/txt_mentor"
+        android:layout_marginStart="280dp"
+        android:layout_marginTop="150dp"
+        android:backgroundTint="@color/white"
+        />
+
+    <ImageView
+        android:id="@+id/img_mentor2"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mentor2"
+        app:layout_constraintTop_toBottomOf="@+id/img_mentor1"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="270dp"/>
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/btn_star"
+        app:layout_constraintTop_toBottomOf="@+id/img_mentor1"
+        android:layout_marginStart="280dp"
+        android:layout_marginTop="295dp"
+        android:backgroundTint="@color/white"/>
+
+    <ImageView
+        android:id="@+id/img_mentor3"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mentor3"
+        app:layout_constraintTop_toBottomOf="@+id/img_mentor2"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="420dp"/>
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/btn_star"
+        app:layout_constraintTop_toBottomOf="@+id/img_mentor2"
+        android:layout_marginStart="280dp"
+        android:layout_marginTop="435dp"
+        android:backgroundTint="@color/white"/>
 
 </FrameLayout>
