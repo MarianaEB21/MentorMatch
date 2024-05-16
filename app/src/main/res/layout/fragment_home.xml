@@ -58,7 +58,18 @@
             android:id="@+id/img_mentor1"
             android:layout_width="340dp"
             android:layout_height="wrap_content"
-            android:src="@drawable/mentor1" />
+            android:src="@drawable/mentor1">
+        </ImageView>
+
+        <ImageButton
+            android:id="@+id/heart_filled"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="269dp"
+            android:layout_marginTop="37dp"
+            android:src="@drawable/heart_filled"
+            />
+
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView

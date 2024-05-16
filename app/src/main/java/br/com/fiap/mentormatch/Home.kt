@@ -1,10 +1,18 @@
 package br.com.fiap.mentormatch
 
+import android.R
+import android.app.Notification
+import android.app.NotificationManager
+import android.content.Context
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageButton
+import android.widget.Toast
+import androidx.core.content.ContextCompat.getSystemService
+import androidx.fragment.app.Fragment
+
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -35,6 +43,25 @@ class Home : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_home, container, false)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        val heartFilled: ImageButton = view.findViewById(R.id.heart_filled)
+        heartFilled.setOnClickListener {
+            Toast.makeText(getActivity(), "Mariana meu amorrr",
+                Toast.LENGTH_LONG).show();
+
+            val notif = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager?
+            val notify: Notification =
+                Notification.Builder(getApplicationContext()).setContentTitle(tittle)
+                    .setContentText(body).setContentTitle(subject).setSmallIcon(R.drawable.abc)
+                    .build()
+
+            notify.flags = notify.flags or Notification.FLAG_AUTO_CANCEL
+            notif!!.notify(0, notify)
+        }
     }
 
     companion object {
