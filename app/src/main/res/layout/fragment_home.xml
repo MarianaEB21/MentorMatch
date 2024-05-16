@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home"
+    android:background="@color/gelo">
+
+
+    <TextView
+        android:id="@+id/txt_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bem Vindo João!"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+
+        />
+
+    <SearchView
+        android:id="@+id/search_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/txt_home"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="30dp"
+
+        >
+
+    </SearchView>
+
+    <TextView
+        android:id="@+id/txt_mentor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="10dp"
+        android:text="Mentores que podem te ajudar"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/search_view"
+        />
+
+    <ImageView
+        android:id="@+id/img_mentor1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mentor1"
+        app:layout_constraintTop_toBottomOf="@+id/txt_mentor"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="220dp"/>
+
+</FrameLayout>
