@@ -1,6 +1,5 @@
 package br.com.fiap.mentormatch
 
-import br.com.fiap.mentormatch.R
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -8,7 +7,6 @@ import android.view.ViewGroup
 import android.widget.ImageButton
 import android.widget.Toast
 import androidx.fragment.app.Fragment
-
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -44,11 +42,22 @@ class Home : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val heartFilled: ImageButton = view.findViewById(R.id.heart_filled)
+        var msgNotificacao = "";
+        val heartFilled: ImageButton = view.findViewById(R.id.heart_filled);
+        heartFilled.alpha = 0f;
+
         heartFilled.setOnClickListener {
+            if (heartFilled.alpha > 0) {
+                heartFilled.alpha = 0f;
+                msgNotificacao = "Você removeu o like em Gustavo Amorim"
+            } else {
+                heartFilled.alpha = 1f;
+                msgNotificacao = "Você deu match com Gustavo Amorim";
+            }
+
             Toast.makeText(
-                activity, "Mariana meu amorrr",
-                Toast.LENGTH_LONG
+                activity, msgNotificacao,
+                Toast.LENGTH_SHORT
             ).show()
         }
     }
