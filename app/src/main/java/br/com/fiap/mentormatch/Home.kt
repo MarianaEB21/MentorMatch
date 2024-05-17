@@ -1,16 +1,12 @@
 package br.com.fiap.mentormatch
 
-import android.R
-import android.app.Notification
-import android.app.NotificationManager
-import android.content.Context
+import br.com.fiap.mentormatch.R
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageButton
 import android.widget.Toast
-import androidx.core.content.ContextCompat.getSystemService
 import androidx.fragment.app.Fragment
 
 
@@ -50,17 +46,10 @@ class Home : Fragment() {
 
         val heartFilled: ImageButton = view.findViewById(R.id.heart_filled)
         heartFilled.setOnClickListener {
-            Toast.makeText(getActivity(), "Mariana meu amorrr",
-                Toast.LENGTH_LONG).show();
-
-            val notif = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager?
-            val notify: Notification =
-                Notification.Builder(getApplicationContext()).setContentTitle(tittle)
-                    .setContentText(body).setContentTitle(subject).setSmallIcon(R.drawable.abc)
-                    .build()
-
-            notify.flags = notify.flags or Notification.FLAG_AUTO_CANCEL
-            notif!!.notify(0, notify)
+            Toast.makeText(
+                activity, "Mariana meu amorrr",
+                Toast.LENGTH_LONG
+            ).show()
         }
     }
 
