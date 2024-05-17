@@ -10,7 +10,7 @@
 
 
     <TextView
-        android:id="@+id/txt_home"
+        android:id="@+id/txt_chat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
@@ -30,10 +30,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_home" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_chat" />
 
     <TextView
-        android:id="@+id/txt_mentor"
+        android:id="@+id/txt_schedule"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -49,7 +49,7 @@
         android:layout_marginTop="12dp"
         app:cardCornerRadius="14dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_mentor">
+        app:layout_constraintTop_toBottomOf="@+id/txt_schedule">
 
         <ImageView
             android:id="@+id/img_mentor1"
