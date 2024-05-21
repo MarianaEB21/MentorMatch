@@ -8,14 +8,19 @@ import br.com.fiap.mentormatch.databinding.ActivityMainBinding
 
 class Welcome : AppCompatActivity(R.layout.welcome) {
 
-    private lateinit var binding: ActivityMainBinding
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         val btnLogar: ImageButton = findViewById(R.id.btn_login)
+        val btnRegister: ImageButton = findViewById(R.id.btn_register);
+
         btnLogar.setOnClickListener {
             val intent = Intent(this, Login::class.java)
+            startActivity(intent)
+        }
+
+        btnRegister.setOnClickListener {
+            val intent = Intent(this, Register::class.java)
             startActivity(intent)
         }
     }

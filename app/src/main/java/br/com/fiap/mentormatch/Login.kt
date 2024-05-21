@@ -1,5 +1,6 @@
 package br.com.fiap.mentormatch
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageButton
 import androidx.activity.enableEdgeToEdge
@@ -16,8 +17,9 @@ class Login: AppCompatActivity(R.layout.login)  {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState);
 
-        val btnLogar: ImageButton = findViewById(R.id.btn_login);
-        btnLogar.setOnClickListener {
+        val btnLogin: ImageButton = findViewById(R.id.btn_login);
+
+        btnLogin.setOnClickListener {
             binding = ActivityMainBinding.inflate(layoutInflater)
             enableEdgeToEdge()
             setContentView(binding.root)

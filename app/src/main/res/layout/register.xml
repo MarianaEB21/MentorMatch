@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gelo"
+    android:padding="12dp"
+    tools:context=".Register">
+
+    <ImageView
+        android:id="@+id/img_mentormatch"
+        android:layout_width="226dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:background="@android:color/transparent"
+        android:elevation="0dp"
+        android:src="@drawable/mentormatch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_subtitle_mentormatch"
+        android:layout_width="311dp"
+        android:layout_height="107dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/transparent"
+        android:elevation="0dp"
+        android:src="@drawable/img_subtitle_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_mentormatch"
+        android:scaleType="fitCenter" />
+
+    <ImageView
+        android:id="@+id/img_register_fields"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="60dp"
+        android:background="@android:color/transparent"
+        android:elevation="0dp"
+        android:src="@drawable/register_fields"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_subtitle_mentormatch"
+        android:scaleType="fitCenter" />
+
+    <ImageButton
+        android:id="@+id/btn_register_done"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:background="@android:color/transparent"
+        android:elevation="0dp"
+        android:layout_marginTop="65dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/btn_register_done"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_register_fields"
+        android:contentDescription="Botão de cadastro" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
