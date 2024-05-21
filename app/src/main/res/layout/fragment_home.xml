@@ -8,13 +8,12 @@
     android:padding="12dp"
     tools:context=".Home">
 
-
     <TextView
         android:id="@+id/txt_chat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        android:text="Bem Vindo João!"
+        android:text="Bem Vinda Mariana!"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"

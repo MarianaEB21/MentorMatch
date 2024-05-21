@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/gelo"
     android:padding="12dp"
-    tools:context=".Home">
+    tools:context=".Chat">
 
     <TextView
         android:id="@+id/txt_chat"
@@ -91,8 +91,8 @@
                 android:id="@+id/chat_profile_otavio"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@android:color/transparent"
                 android:layout_marginStart="15dp"
+                android:background="@android:color/transparent"
                 android:src="@drawable/profile_otavio"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -112,16 +112,15 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/chat_constraint_2"
             android:layout_width="wrap_content"
-            android:layout_height="0dp"
+            android:layout_height="wrap_content"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/chat_constraint_1"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintLeft_toRightOf="@+id/chat_constraint_1">
 
             <ImageButton
                 android:id="@+id/chat_profile_rafaela"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="155dp"
+                android:layout_marginStart="55dp"
                 android:background="@android:color/transparent"
                 android:src="@drawable/profile_rafeaela"
                 app:layout_constraintStart_toStartOf="parent"
@@ -131,9 +130,9 @@
                 android:id="@+id/chat_rafaela_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
                 android:layout_marginTop="5dp"
                 android:text="Rafaela Omura"
-                android:layout_marginStart="135dp"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
