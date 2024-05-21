@@ -15,7 +15,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
         android:background="@android:color/transparent"
-        android:foregroundGravity="center"
         android:src="@drawable/logotipo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
